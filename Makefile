@@ -13,3 +13,6 @@ $(opengraph_fb): icon-transparent-630.png
 
 icon-transparent-630.png: icon-transparent.svg
 	rsvg -w 630 -h 630 -a $< $@
+
+deploy:
+	ssh gansoi.com git -C /gansoi/website pull
