@@ -1,5 +1,5 @@
 # If the content changes, so should the URL. Facebook caches this forever.
-opengraph_fb = opengraph-fb-1.png
+opengraph_fb = opengraph-fb-2.png
 
 all: $(opengraph_fb)
 
@@ -9,7 +9,7 @@ clean:
 # Facebook recommends a size of 1200x360.
 # https://developers.facebook.com/docs/sharing/best-practices#images
 $(opengraph_fb): icon-transparent-630.png
-	convert -background "#174854" $< -gravity center -extent 1200x630 $@
+	convert -background "#004076" $< -gravity center -extent 1200x630 $@
 
 icon-transparent-630.png: icon-transparent.svg
 	rsvg -w 630 -h 630 -a $< $@
