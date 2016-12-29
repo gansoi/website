@@ -12,18 +12,17 @@ body {
 }
 .page {
  background-image: url('hexabg.png');
- height: 100%;
+ min-height: 100%;
  width: 100%;
- position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 .center {
  font-family: Arial, Helvetica, sans-serif;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
  text-align: center;
+ padding: 10px;
 }
 
 a {
@@ -38,12 +37,12 @@ a:visited {
  </head>
  <body>
   <div class="page">
-   <div class="center">
+   <span class="center">
     <img src="icon-transparent.svg" width="100%"/>
     <h1>Gansoi Infrastructure Monitoring</h1>
     <p>Open Source infrastructure monitoring for a modern world.</p>
     <a href="https://github.com/gansoi/gansoi"><img src="GitHub-Mark-32px.png" /></a>
-   </div>
+   </span>
   </div>
  </body>
 </html>
